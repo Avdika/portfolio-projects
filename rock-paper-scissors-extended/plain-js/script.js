@@ -27,7 +27,6 @@ document.getElementById('extended').addEventListener('click', () => startGame('e
 document.getElementById('back').addEventListener('click', backToSelection);
 
 function startGame(version) {
-  console.log('Starting game with version:', version); // Debugging line
   document.getElementById('version-select').style.display = 'none';
   document.getElementById('game').style.display = 'block';
   const title = document.querySelector('#game h1');
@@ -35,13 +34,11 @@ function startGame(version) {
     document.getElementById('lizard').style.display = 'inline-block';
     document.getElementById('spock').style.display = 'inline-block';
     title.innerText = 'Rock Paper Scissors Lizard Spock';
-    console.log('Set title to: Rock Paper Scissors Lizard Spock'); // Debugging line
     showHelp('extended');
   } else {
     document.getElementById('lizard').style.display = 'none';
     document.getElementById('spock').style.display = 'none';
     title.innerText = 'Rock Paper Scissors';
-    console.log('Set title to: Rock Paper Scissors'); // Debugging line
     showHelp('classic');
   }
   resetCounts();
