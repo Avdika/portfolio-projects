@@ -44,6 +44,7 @@ function startGame(version) {
 function backToSelection() {
   document.getElementById('version-select').style.display = 'block';
   document.getElementById('game').style.display = 'none';
+  document.querySelector('h1').innerText = 'Select Game Version';
 }
 
 // Add event listeners for the game buttons
