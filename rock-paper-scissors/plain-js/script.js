@@ -85,3 +85,55 @@ function playGame(userChoice) {
   document.getElementById('result').innerText = `You chose ${userChoice}, computer chose ${computerChoice}. ${result}`;
   updateCounts();
 }
+
+// Show the appropriate help content based on the selected version
+function showHelp(version) {
+  const rulesFull = document.getElementById('rules-full');
+  const rulesClassic = document.getElementById('rules-classic');
+  const rulesExtended = document.getElementById('rules-extended');
+
+  if (version === 'classic') {
+    rulesFull.style.display = 'none';
+    rulesClassic.style.display = 'block';
+    rulesExtended.style.display = 'none';
+  } else if (version === 'extended') {
+    rulesFull.style.display = 'none';
+    rulesClassic.style.display = 'none';
+    rulesExtended.style.display = 'block';
+  } else {
+    rulesFull.style.display = 'block';
+    rulesClassic.style.display = 'none';
+    rulesExtended.style.display = 'none';
+  }
+}
+
+// Handle Help modal
+const modal = document.getElementById('helpModal');
+const btnHelpMain = document.getElementById('help');
+const btnHelpGame = document.getElementById('help-game');
+const span = document.getElementsByClassName('close')[0];
+
+btnHelpMain.onclick = function () {
+  showHelp('full');
+  modal.style.display = 'block';
+}
+
+btnHelpGame.onclick = function () {
+  const gameTitle = document.querySelector('h1').innerText;
+  if (gameTitle === 'Rock Paper Scissors') {
+    showHelp('classic');
+  } else {
+    showHelp('extended');
+  }
+  modal.style.display = 'block';
+}
+
+span.onclick = function () {
+  modal.style.display = 'none';
+}
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+}

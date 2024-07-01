@@ -13,6 +13,7 @@
       <button id="extended">
         Extended (Rock, Paper, Scissors, Lizard, Spock)
       </button>
+      <button id="help">Help</button>
     </div>
     <div id="game" style="display: none">
       <h1>Rock Paper Scissors</h1>
@@ -29,7 +30,95 @@
       </div>
       <button id="reset">Reset</button>
       <button id="back">Back to Game Selection</button>
+      <button id="help-game">Help</button>
     </div>
+
+    <!-- Help Modal -->
+    <div id="helpModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Game Rules</h2>
+        <div id="rules-full">
+          <h3>
+            Classic (<strong>Rock</strong>, <strong>Paper</strong>,
+            <strong>Scissors</strong>)
+          </h3>
+          <ul>
+            <li><strong>Rock</strong> crushes <strong>Scissors</strong></li>
+            <li><strong>Paper</strong> covers <strong>Rock</strong></li>
+            <li><strong>Scissors</strong> cuts <strong>Paper</strong></li>
+          </ul>
+          <h3>
+            Extended (<strong>Rock</strong>, <strong>Paper</strong>,
+            <strong>Scissors</strong>, <strong>Lizard</strong>,
+            <strong>Spock</strong>)
+          </h3>
+          <ul>
+            <li>
+              <strong>Rock</strong> crushes <strong>Scissors</strong> and
+              <strong>Lizard</strong>
+            </li>
+            <li>
+              <strong>Paper</strong> covers <strong>Rock</strong> and disproves
+              <strong>Spock</strong>
+            </li>
+            <li>
+              <strong>Scissors</strong> cuts <strong>Paper</strong> and
+              decapitates <strong>Lizard</strong>
+            </li>
+            <li>
+              <strong>Lizard</strong> eats <strong>Paper</strong> and poisons
+              <strong>Spock</strong>
+            </li>
+            <li>
+              <strong>Spock</strong> smashes <strong>Scissors</strong> and
+              vaporizes <strong>Rock</strong>
+            </li>
+          </ul>
+        </div>
+        <div id="rules-classic" style="display: none">
+          <h3>
+            Classic (<strong>Rock</strong>, <strong>Paper</strong>,
+            <strong>Scissors</strong>)
+          </h3>
+          <ul>
+            <li><strong>Rock</strong> crushes <strong>Scissors</strong></li>
+            <li><strong>Paper</strong> covers <strong>Rock</strong></li>
+            <li><strong>Scissors</strong> cuts <strong>Paper</strong></li>
+          </ul>
+        </div>
+        <div id="rules-extended" style="display: none">
+          <h3>
+            Extended (<strong>Rock</strong>, <strong>Paper</strong>,
+            <strong>Scissors</strong>, <strong>Lizard</strong>,
+            <strong>Spock</strong>)
+          </h3>
+          <ul>
+            <li>
+              <strong>Rock</strong> crushes <strong>Scissors</strong> and
+              <strong>Lizard</strong>
+            </li>
+            <li>
+              <strong>Paper</strong> covers <strong>Rock</strong> and disproves
+              <strong>Spock</strong>
+            </li>
+            <li>
+              <strong>Scissors</strong> cuts <strong>Paper</strong> and
+              decapitates <strong>Lizard</strong>
+            </li>
+            <li>
+              <strong>Lizard</strong> eats <strong>Paper</strong> and poisons
+              <strong>Spock</strong>
+            </li>
+            <li>
+              <strong>Spock</strong> smashes <strong>Scissors</strong> and
+              vaporizes <strong>Rock</strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
