@@ -33,10 +33,12 @@ function startGame(version) {
     document.getElementById('lizard').style.display = 'inline-block';
     document.getElementById('spock').style.display = 'inline-block';
     document.querySelector('h1').innerText = 'Rock Paper Scissors Lizard Spock';
+    showHelp('extended');
   } else {
     document.getElementById('lizard').style.display = 'none';
     document.getElementById('spock').style.display = 'none';
     document.querySelector('h1').innerText = 'Rock Paper Scissors';
+    showHelp('classic');
   }
   resetCounts();
 }
@@ -45,6 +47,7 @@ function backToSelection() {
   document.getElementById('version-select').style.display = 'block';
   document.getElementById('game').style.display = 'none';
   document.querySelector('h1').innerText = 'Select Game Version';
+  showHelp('full');
 }
 
 // Add event listeners for the game buttons
