@@ -3,15 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors</title>
+    <title>Rock Paper Scissors Lizard Spock</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="game">
+    <div id="version-select">
+      <h1>Select Game Version</h1>
+      <button id="classic">Classic (Rock, Paper, Scissors)</button>
+      <button id="extended">
+        Extended (Rock, Paper, Scissors, Lizard, Spock)
+      </button>
+    </div>
+    <div id="game" style="display: none">
       <h1>Rock Paper Scissors</h1>
       <button id="rock">Rock</button>
       <button id="paper">Paper</button>
       <button id="scissors">Scissors</button>
+      <button id="lizard" style="display: none">Lizard</button>
+      <button id="spock" style="display: none">Spock</button>
       <div id="result"></div>
       <div id="score">
         <p>Wins: <span id="win-count">0</span></p>
@@ -19,6 +28,7 @@
         <p>Draws: <span id="draw-count">0</span></p>
       </div>
       <button id="reset">Reset</button>
+      <button id="back">Back to Game Selection</button>
     </div>
     <script src="script.js"></script>
   </body>
