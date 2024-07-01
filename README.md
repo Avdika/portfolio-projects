@@ -5,8 +5,8 @@ This repository contains several projects, each in its own folder. Some projects
 ## Projects
 
 1. **Rock Paper Scissors**
-   - **Plain JS**: [`rock-paper-scissors/plain-js`](./rock-paper-scissors/plain-js)
-   - **React.js**: [`rock-paper-scissors/react`](./rock-paper-scissors/react)
+   - **Plain JS**: [`rock-paper-scissors-extended/plain-js`](./rock-paper-scissors-extended/plain-js)
+   - **React.js**: [`rock-paper-scissors-extended/react`](./rock-paper-scissors-extended/react)
 
 (More projects and implementations will be added over time.)
 
@@ -23,7 +23,7 @@ Sparse checkout allows you to clone only specific folders from a repository. Her
    - Clone the repository with the `--no-checkout` option:
 
      ```sh
-     git clone --no-checkout https://github.com/yourusername/portfolio-projects.git
+     git clone --no-checkout https://github.com/Avdika/portfolio-projects.git
      cd portfolio-projects
      ```
 
@@ -37,10 +37,11 @@ Sparse checkout allows you to clone only specific folders from a repository. Her
 
 3. **Specify the Folder to Checkout**:
 
-   - Create a `.git/info/sparse-checkout` file and add the paths of the folders you want to checkout. For example, to checkout only the `rock-paper-scissors/plain-js` folder:
+   - Create a `.git/info/sparse-checkout` file and add the paths of the folders you want to checkout.
+     For example, to checkout only the `rock-paper-scissors-extended/plain-js` folder:
 
      ```sh
-     echo "rock-paper-scissors/plain-js/" >> .git/info/sparse-checkout
+     echo "rock-paper-scissors-extended/plain-js/" >> .git/info/sparse-checkout
      ```
 
 4. **Update the Checkout**:
@@ -72,7 +73,7 @@ If you want to clone only the Plain JS version of the Rock Paper Scissors projec
    - Clone the repository with the `--no-checkout` option:
 
      ```sh
-     git clone --no-checkout https://github.com/yourusername/portfolio-projects.git
+     git clone --no-checkout https://github.com/Avdika/portfolio-projects.git
      cd portfolio-projects
      ```
 
@@ -89,7 +90,7 @@ If you want to clone only the Plain JS version of the Rock Paper Scissors projec
    - Add the path of the `plain-js` folder to the `.git/info/sparse-checkout` file:
 
      ```sh
-     echo "rock-paper-scissors/plain-js/" >> .git/info/sparse-checkout
+     echo "rock-paper-scissors-extended/plain-js/" >> .git/info/sparse-checkout
      ```
 
 4. **Update the Checkout**:
